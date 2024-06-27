@@ -36,7 +36,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <h3>&#9312; Install Active Directory in DC-1</h3>
 
 - In the Server Manager dashboard, click 'Add Roles and Features' and continue the setup
-<img width="736" alt="AD-setup" src="https://imgur.com/cQnpkfN.png">
+<img width="680" alt="AD-setup" src="https://imgur.com/cQnpkfN.png">
 
 <p>
 
@@ -55,7 +55,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 - Once the installation is done, notice the flag on the Server Manager
 - Click on the flag and promote DC-1 to Domain Controller
 
-<img width="242" alt="notif" src="https://imgur.com/4W04gBQ.png">
+<img width="350" alt="notif" src="https://imgur.com/4W04gBQ.png">
 
 
 <p><strong>.</strong></p>
@@ -76,7 +76,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 - Once DC-1 has rebooted, click on tools and select Active Directory Users and Computers
 - Right click on mydomain.com; select -> New -> Organizational Unit and click on Organizational Unit
-<img width="438" alt="Users" src="https://imgur.com/VESNQeS.png">
+<img width="500" alt="Users" src="https://imgur.com/VESNQeS.png">
 
 
 <br>
@@ -87,7 +87,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <p><strong> We will create two OU's labeled "_EMPLOYEES" and "_ADMINS" </strong></p>
 
-<img width="450" alt="admins" src="https://imgur.com/vsSxufF.png">
+<img width="500" alt="admins" src="https://imgur.com/vsSxufF.png">
 
 
 <p><strong>.</strong></p>
@@ -95,7 +95,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <p><strong>Right click on Users and create a new user named "Jane Doe" with the username "jane_admin"</strong></p>
 
-<img width="323" alt="jane doe" src="https://imgur.com/n9RKfcz.png">
+<img width="450" alt="jane doe" src="https://imgur.com/n9RKfcz.png">
 
 
 <p><strong>.</strong></p>
@@ -103,7 +103,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <p><strong>We will change Jane Doe into an admin account by right clicking her name and adding her to the “Domain Admins” security group</strong></p>
 
-<img width="412" alt="add to group" src="https://imgur.com/n9RKfcz.png">
+<img width="450" alt="add to group" src="https://imgur.com/n9RKfcz.png">
 
 
 
@@ -112,7 +112,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <p><strong>Logout of DC-1 and sign back in with Jane Doe’s credentials</strong></p>
 
-<img width="337" alt="jane login" src="https://imgur.com/EnnzYVs.png">
+<img width="400" alt="jane login" src="https://imgur.com/EnnzYVs.png">
 
 <p><strong>.</strong></p>
 <p><strong>.</strong></p>
@@ -124,7 +124,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 - In the Azure Portal, select Client-1 -> Networking -> Network interface -> Settings -> DNS Server
 
-<img width="735" alt="dns servers" src="https://imgur.com/9bKXViA.png">
+<img width="350" alt="dns servers" src="https://imgur.com/9bKXViA.png">
 
 
 
@@ -133,14 +133,14 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <p><strong>Select a custom DNS server and type in the private IP address of DC-1 and restart Client-1 virtual machine in Azure</strong></p>
 
-<img width="356" alt="dns servers2" src="https://imgur.com/5hhy1Ac.png">
+<img width="410" alt="dns servers2" src="https://imgur.com/5hhy1Ac.png">
 
 <p><strong>.</strong></p>
 <p><strong>.</strong></p>
 
 <p><strong> Now log back in to Client-1 using your original credentials. Click start and go to Settings -> Rename this PC (advanced) -> Change and add “mydomain.com” and login with the admin credentials previously created (jane_admin) </strong></p>
 
-<img width="297" alt="remote desktop first login" src="https://imgur.com/OsjB5gK.png">
+<img width="310" alt="remote desktop first login" src="https://imgur.com/OsjB5gK.png">
 
 <br>
 
@@ -158,7 +158,7 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <br>
 
 
-<img width="343" src="https://imgur.com/R2sxVPR.png">
+<img width="350" src="https://imgur.com/R2sxVPR.png">
 
 <p><strong>This allows normal users to login to Client-1</strong></p>
 
