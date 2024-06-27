@@ -41,14 +41,10 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <p>
 
 </p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <p><strong> Select Active Directory Domain Services and finish the installation </strong> </p>
 <p>
 </p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <h3>&#9313; Promote DC-1 to Domain Controller </h3>
 
@@ -58,8 +54,6 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <img width="350" alt="notif" src="https://imgur.com/4W04gBQ.png">
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 -  Next, we will select 'Add a new forest' and set the Root domain name to “mydomain.com”
 <p>
@@ -69,37 +63,26 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 - Log back into Remote Desktop with your username credentials following with "@mydomain.com" 
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <h3>&#9314; Create an Admin in Active Directory </h3>
 
 - Once DC-1 has rebooted, click on tools and select Active Directory Users and Computers
-- Right click on mydomain.com; select -> New -> Organizational Unit and click on Organizational Unit
+- Right click on mydomain.com; select -> New -> Organizational Unit 
 <img width="500" alt="Users" src="https://imgur.com/VESNQeS.png">
 
-
 <br>
-<br>
-<br>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <p><strong> We will create two OU's labeled "_EMPLOYEES" and "_ADMINS" </strong></p>
 
 <img width="500" alt="admins" src="https://imgur.com/vsSxufF.png">
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <p><strong>Right click on Users and create a new user named "Jane Doe" with the username "jane_admin"</strong></p>
 
 <img width="450" alt="jane doe" src="https://imgur.com/n9RKfcz.png">
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <p><strong>We will change Jane Doe into an admin account by right clicking her name and adding her to the “Domain Admins” security group</strong></p>
 
@@ -107,15 +90,10 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
 <p><strong>Logout of DC-1 and sign back in with Jane Doe’s credentials</strong></p>
 
 <img width="400" alt="jane login" src="https://imgur.com/EnnzYVs.png">
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 
 <h3>&#9315; Join Client-1 to Domain </h3>
@@ -127,16 +105,10 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <img width="350" alt="dns servers" src="https://imgur.com/9bKXViA.png">
 
 
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong>Select a custom DNS server and type in the private IP address of DC-1 and restart Client-1 virtual machine in Azure</strong></p>
+<p><strong>Select custom DNS server and type in the private IP address of DC-1 and restart Client-1 virtual machine in Azure</strong></p>
 
 <img width="410" alt="dns servers2" src="https://imgur.com/5hhy1Ac.png">
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <p><strong> Now log back in to Client-1 using your original credentials. Click start and go to Settings -> Rename this PC (advanced) -> Change and add “mydomain.com” and login with the admin credentials previously created (jane_admin) </strong></p>
 
@@ -147,8 +119,6 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 <p> <strong>Once Client-1 has been added, the VM will restart.</strong></p>
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 <h3>&#9316; Setup Remote Desktop for non-administrative users </h3>
 
@@ -164,8 +134,6 @@ The goal is to install and set up Active Directory on the designated Domain Cont
 
 <br>
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
 
 
